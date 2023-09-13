@@ -30,6 +30,29 @@
             {% endfor %}
         </tbody>
     </table>
+
+    <hr>
+
+    <h1 class="text-center">List of Teams</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Ballpark</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in teams %}
+            <tr>
+                <td>{{ team.team_name }}</td>
+                <td>{{ team.city }}</td>
+                <td>{{ team.ballpark }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     <a href="/player/new" class="btn btn-primary">Add a Player</a>
+    <a href="/team/new" class="btn btn-primary">Add a Team</a>
 </body>
 </html>

@@ -26,7 +26,7 @@ def edit(id):
     data ={ 
         "id":id
     }
-    return render_template("edit.html", player=Player.get_one(data))
+    return render_template("editteam.html", player=Player.get_one(data))
 
 @app.route('/player/show/<int:id>')
 def show(id):
